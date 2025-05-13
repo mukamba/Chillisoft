@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Create Minute Item";
+}
+
+<h1  class="text-center">Create Minute Item</h1>
+
+<hr />
+
+<div class="row justify-content-center">
+    <div class="col-md-12">
+        <form asp-action="CreateMinuteItem" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Start of First Row (1/4 width for Meeting info) -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="MeetingId" class="control-label">Meeting ID</label>
+                        <input type="number" class="form-control" id="MeetingId" name="MeetingId" value="@Model.MeetingId" readonly />
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="MeetingTypeDescription" class="control-label">Meeting Type Description</label>
+                        <input type="text" class="form-control" id="MeetingTypeDescription" name="MeetingTypeDescription" value="@Model.MeetingTypeDescription" readonly />
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="MeetingNumber" class="control-label">Meeting Number</label>
+                        <input type="text" class="form-control" id="MeetingNumber" name="MeetingNumber" value="@Model.MeetingNumber" readonly />
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="MeetingDateCreated" class="control-label">Meeting Date Created</label>
+                        <input type="date" class="form-control" id="MeetingDateCreated" name="MeetingDateCreated" value="@Model.MeetingDateCreated.ToString("yyyy-MM-dd")" readonly />
+                    </div>
+                </div>
+            </div>
+            <!-- End of First Row -->
+
+            <br />
+
+            <!-- Start of Second Row (Rest of the fields) -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="EmployeeID" class="control-label">Select Employee</label>
+                        <select class="form-control" id="EmployeeID" name="EmployeeID" required>
+                            @foreach (var employee in Model.EmployeesList)
+                            {
+                                <option value="@employee.EmployeeID">@employee.FirstName @employee.LastName</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="StatusID" class="control-label">Select Status</label>
+                        <select class="form-control" id="StatusID" name="StatusID" required>
+                            @foreach (var status in Model.StatusesList)
+                            {
+                                <option value="@status.StatusID">@status.Description</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Description" class="control-label">Minute Description</label>
+                <textarea class="form-control" id="Description" name="Description" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="Title" class="control-label"> Minute Title</label>
+                <input type="text" class="form-control" id="Title" name="Title" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Action" class="control-label">Action Required</label>
+                <input type="text" class="form-control" id="Action" name="Action" required />
+            </div>
+
+            <div class="form-group">
+                <label for="DueDate" class="control-label">Due Date</label>
+                <input type="date" class="form-control" id="DueDate" name="DueDate" required />
+            </div>
+
+            <div class="form-group">
+                <label for="CompletedDate" class="control-label">Completed Date</label>
+                <input type="date" class="form-control" id="CompletedDate" name="CompletedDate" required/>
+            </div><br />
+
+            <div class="form-group text-center">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

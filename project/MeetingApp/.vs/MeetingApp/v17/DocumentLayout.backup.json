@@ -1,0 +1,197 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|c:\\users\\user\\3d objects\\personal\\chillisoft\\project\\meetingapp\\meetingapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|solutionrelative:meetingapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|c:\\users\\user\\3d objects\\personal\\chillisoft\\project\\meetingapp\\meetingapp\\models\\sqlclasses\\sqldatacollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|solutionrelative:meetingapp\\models\\sqlclasses\\sqldatacollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|c:\\users\\user\\3d objects\\personal\\chillisoft\\project\\meetingapp\\meetingapp\\models\\sqlclasses\\sqlcreateminuteitemprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|solutionrelative:meetingapp\\models\\sqlclasses\\sqlcreateminuteitemprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|c:\\users\\user\\3d objects\\personal\\chillisoft\\project\\meetingapp\\meetingapp\\models\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|solutionrelative:meetingapp\\models\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|c:\\users\\user\\3d objects\\personal\\chillisoft\\project\\meetingapp\\meetingapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|solutionrelative:meetingapp\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|c:\\users\\user\\3d objects\\personal\\chillisoft\\project\\meetingapp\\meetingapp\\models\\displaymeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|solutionrelative:meetingapp\\models\\displaymeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|c:\\users\\user\\3d objects\\personal\\chillisoft\\project\\meetingapp\\meetingapp\\models\\createminuteitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|solutionrelative:meetingapp\\models\\createminuteitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|c:\\users\\user\\3d objects\\personal\\chillisoft\\project\\meetingapp\\meetingapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|solutionrelative:meetingapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|c:\\users\\user\\3d objects\\personal\\chillisoft\\project\\meetingapp\\meetingapp\\views\\home\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|solutionrelative:meetingapp\\views\\home\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|c:\\users\\user\\3d objects\\personal\\chillisoft\\project\\meetingapp\\meetingapp\\models\\sqlclasses\\sqlprocessing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|solutionrelative:meetingapp\\models\\sqlclasses\\sqlprocessing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|c:\\users\\user\\3d objects\\personal\\chillisoft\\project\\meetingapp\\meetingapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{71B9FF5C-769D-4F5C-873D-A0096F0D13A6}|MeetingApp\\MeetingApp.csproj|solutionrelative:meetingapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SqlDataCollection.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\SqlClasses\\SqlDataCollection.cs",
+              "RelativeDocumentMoniker": "MeetingApp\\Models\\SqlClasses\\SqlDataCollection.cs",
+              "ToolTip": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\SqlClasses\\SqlDataCollection.cs",
+              "RelativeToolTip": "MeetingApp\\Models\\SqlClasses\\SqlDataCollection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T16:36:52.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Meeting.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\Meeting.cs",
+              "RelativeDocumentMoniker": "MeetingApp\\Models\\Meeting.cs",
+              "ToolTip": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\Meeting.cs",
+              "RelativeToolTip": "MeetingApp\\Models\\Meeting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T16:36:37.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "MeetingApp\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "MeetingApp\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T16:36:36.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DisplayMeeting.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\DisplayMeeting.cs",
+              "RelativeDocumentMoniker": "MeetingApp\\Models\\DisplayMeeting.cs",
+              "ToolTip": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\DisplayMeeting.cs",
+              "RelativeToolTip": "MeetingApp\\Models\\DisplayMeeting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T16:36:34.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateMinuteItem.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\CreateMinuteItem.cs",
+              "RelativeDocumentMoniker": "MeetingApp\\Models\\CreateMinuteItem.cs",
+              "ToolTip": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\CreateMinuteItem.cs",
+              "RelativeToolTip": "MeetingApp\\Models\\CreateMinuteItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T16:36:32.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MeetingApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MeetingApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAqwCUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T14:59:19.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SqlProcessing.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\SqlClasses\\SqlProcessing.cs",
+              "RelativeDocumentMoniker": "MeetingApp\\Models\\SqlClasses\\SqlProcessing.cs",
+              "ToolTip": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\SqlClasses\\SqlProcessing.cs",
+              "RelativeToolTip": "MeetingApp\\Models\\SqlClasses\\SqlProcessing.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAmwPMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T14:30:14.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MeetingApp\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MeetingApp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T19:42:24.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SQLCreateMinuteItemProcess.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\SqlClasses\\SQLCreateMinuteItemProcess.cs",
+              "RelativeDocumentMoniker": "MeetingApp\\Models\\SqlClasses\\SQLCreateMinuteItemProcess.cs",
+              "ToolTip": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Models\\SqlClasses\\SQLCreateMinuteItemProcess.cs",
+              "RelativeToolTip": "MeetingApp\\Models\\SqlClasses\\SQLCreateMinuteItemProcess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T16:36:50.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MeetingApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MeetingApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwC4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T14:25:09.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "View.cshtml",
+              "DocumentMoniker": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Views\\Home\\View.cshtml",
+              "RelativeDocumentMoniker": "MeetingApp\\Views\\Home\\View.cshtml",
+              "ToolTip": "C:\\Users\\USER\\3D Objects\\Personal\\chillisoft\\project\\MeetingApp\\MeetingApp\\Views\\Home\\View.cshtml",
+              "RelativeToolTip": "MeetingApp\\Views\\Home\\View.cshtml",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAuwGMAAAAeAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T14:20:20.891Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

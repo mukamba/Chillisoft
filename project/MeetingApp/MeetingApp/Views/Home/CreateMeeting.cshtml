@@ -1,0 +1,113 @@
+﻿@model MeetingApp.Models.Meeting
+
+@{
+    ViewData["Title"] = "Create Meeting";
+}
+<h2 style="text-align: center;">Create Meeting</h2>
+
+<div class="container d-flex justify-content-center">
+    <div class="col-md-6">
+        <br /><br /> <br />
+       
+        
+<form asp-action="CreateMeeting" method="post">
+    <div class="form-group">
+                <label asp-for="MeetingNumber" class="control-label" style="font-weight: bold;">Insert Meeting Number</label>
+        <input asp-for="MeetingNumber" class="form-control" required />
+        <span asp-validation-for="MeetingNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+                <label asp-for="MeetingTypeId" class="control-label" style="font-weight: bold;">Meeting Type</label>
+        <select asp-for="MeetingTypeId" class="form-control" asp-items="@(new SelectList(Model.MeetingTypeList, "MeetingTypeID", "Description"))" id="MeetingTypeDropdown" required>
+            <option value="">-- Select Meeting Type --</option>
+        </select>
+        <span asp-validation-for="MeetingTypeId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="MinutesItemId" class="control-label">Select Minutes Item Description</label>
+        <div id="MinutesItemCheckboxGroup"></div>
+        <input type="hidden" id="MinutesItemIds" name="MinutesIDList" />
+        <span id="MinutesItemError" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create Meeting</button>
+    </div>
+</form>
+
+<a href="@Url.Action("Index")">Back to List</a>
+    </div>
+</div>
+
+@section Scripts {
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS (bundle includes Popper.js) -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+ 
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#MeetingTypeDropdown').change(function () {
+                var meetingTypeId = $(this).val();
+                var minutesItemCheckboxGroup = $('#MinutesItemCheckboxGroup');
+
+                // If a meeting type is selected
+                if (meetingTypeId) {
+                    $.ajax({
+                        url: '@Url.Action("GetMinutesItemsByMeetingType", "Home")',
+                        data: { meetingTypeId: meetingTypeId },
+                        type: 'GET',
+                        success: function (data) {
+                            minutesItemCheckboxGroup.empty();
+
+                            // Check if data is returned
+                            if (data && data.length > 0) {
+                                data.forEach(function (item) {
+                                    // Create a checkbox for each minutes item
+                                    var checkbox = '<div class="form-check">' +
+                                                   '<input class="form-check-input" type="checkbox" name="MinutesIDList" value="' + item.minutesItemID + '" id="MinutesItem_' + item.minutesItemID + '">' +
+                                                   '<label class="form-check-label" for="MinutesItem_' + item.minutesItemID + '">' + item.title + ' - ' + item.description + '</label>' +
+                                                   '</div>';
+                                    minutesItemCheckboxGroup.append(checkbox);
+                                });
+                            } else {
+                                minutesItemCheckboxGroup.append('<div>No Minutes Items found</div>');
+                            }
+                        },
+                        error: function () {
+                            alert('An error occurred while retrieving the minutes items.');
+                        }
+                    });
+                } else {
+                    // If no meeting type is selected, clear the checkbox group
+                    minutesItemCheckboxGroup.empty();
+                }
+            });
+
+            // When form is submitted, collect selected minutes item IDs
+            $('form').submit(function (e) {
+                var selectedItems = [];
+                $('input[name="MinutesIDList"]:checked').each(function () {
+                    selectedItems.push($(this).val());
+                });
+
+                // Store the selected items in the hidden input
+                $('#MinutesItemIds').val(selectedItems.join(','));
+
+                // Optionally, validate if the user has selected at least one checkbox
+                if (selectedItems.length === 0) {
+                   // $('#MinutesItemError').text('Please select at least one minutes item.');
+                 //   e.preventDefault(); // Prevent form submission if no items are selected
+                }
+            });
+            
+        });
+    </script> 
+  
+}

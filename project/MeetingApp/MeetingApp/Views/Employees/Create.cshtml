@@ -1,0 +1,26 @@
+﻿@model MeetingApp.Models.Employee
+@{
+    ViewData["Title"] = "Create Employee";
+}
+
+<h2>Add New Employee</h2>
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label>First Name</label>
+        <input asp-for="FirstName" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input asp-for="LastName" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control" type="email" required />
+    </div>
+    <div class="form-group">
+        <label>Title</label>
+        <input asp-for="Title" class="form-control" required />
+    </div><br />
+    <button type="submit" class="btn btn-success">Add </button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

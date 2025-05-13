@@ -1,0 +1,182 @@
+﻿@model MeetingApp.Models.Minute_Item_Status
+@{
+    ViewData["Title"] = "Edit Minute Item";
+}
+
+<h1 class="text-center">Edit Minute Item</h1>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger text-center">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<hr />
+
+<div class="row justify-content-center">
+    <div class="col-md-12">
+        <form asp-action="EditMeetingStatus" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Start of First Row (1/4 width for Meeting info) -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="MeetingId" class="control-label">Select Meeting Number</label>
+                        <select class="form-control" asp-for="MeetingId" required>
+                            <option value="">--Select a Meeting--</option>
+                            @if (Model.MeetingList != null && Model.MeetingList.Any())
+                            {
+                                @foreach (var meeting in Model.MeetingList)
+                                {
+                                    <option value="@meeting.MeetingId">
+                                        @meeting.MeetingNumber
+                                    </option>
+                                }
+                            }
+                            else
+                            {
+                                <option value="">No meetings available</option>
+                            }
+                        </select>
+                        <span asp-validation-for="MeetingId" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="MinutesItemID" class="control-label">Select Minute Item</label>
+                        <select class="form-control" id="MinutesItemID" name="MinutesItemID" required>
+                            @if (Model.MinutesList != null && Model.MinutesList.Any())
+                            {
+                                @foreach (var minutesItem in Model.MinutesList)
+                                {
+                                    <option value="@minutesItem.MinutesItemID">
+                                        @minutesItem.Title
+                                    </option>
+                                }
+                            }
+                            else
+                            {
+                                <option value="">No minute items available</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+       
+                <div class="col-md-6">
+                    <div class="row">
+                        <!-- Employee Dropdown -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="EmployeeID" class="control-label">Select Employee</label>
+                                <select class="form-control" id="EmployeeID" name="EmployeeID" required>
+                                    @if (Model.EmployeeList != null && Model.EmployeeList.Any())
+                                    {
+                                        @foreach (var employee in Model.EmployeeList)
+                                        {
+                                            <option value="@employee.EmployeeID">
+                                                @employee.FirstName @employee.LastName
+                                            </option>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <option value="">No employees available</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Status Dropdown -->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="StatusID" class="control-label">Select Status</label>
+                                <select class="form-control" id="StatusID" name="StatusID" required>
+                                    @if (Model.StatusList != null && Model.StatusList.Any())
+                                    {
+                                        foreach (var status in Model.StatusList)
+                                        {
+                                            <option value="@status.StatusID">@status.Description</option>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <option value="">No statuses available</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+            </div>
+            <!-- End of First Row -->
+
+            <br />
+
+            <!-- Start of Second Row (Action, Due Date, Completed Date) -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Action" class="control-label"> Enter Action Required</label>
+                        <input type="text" class="form-control" id="Action" name="Action" value="" required />
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="DueDate" class="control-label">  Enter Due Date</label>
+                        <input type="date" class="form-control" id="DueDate" name="DueDate" value="@Model.DueDate.ToString("dd-MM-yyyy")" required />
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="CompletedDate" class="control-label">Completed Date</label>
+                        <input type="date" class="form-control" id="CompletedDate" name="CompletedDate" value="@Model.CompletedDate?.ToString("yyyy-MM-ddTHH:mm")" required />
+                    </div>
+                </div>
+            </div>
+            <!-- End of Second Row -->
+
+            <br />
+
+            <!-- Start of Third Row (Title and Description) -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Title" class="control-label">Enter Minute Item</label>
+                        <input type="text" class="form-control" id="Model.MinutesTitle" name="Model.MinutesTitle" value=" " required />
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Description" class="control-label"> Enter Minute Item  Description</label>
+                        <textarea class="form-control" id="Model.MinutesDescription" name="Model.MinutesDescription" rows="3" required></textarea>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Third Row -->
+
+            <br />
+
+            <div class="form-group text-center">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+    }
+   
+}
+
